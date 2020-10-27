@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Trade Stock Live Frontend App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React Application with Web-Socket. [Link](https://trade-stock-app.herokuapp.com/) of application (Heroku Server).
 
 ## Available Scripts
 
