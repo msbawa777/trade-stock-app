@@ -16,7 +16,9 @@ const Dashboard = () => {
 
     const connect = () => {
         client = new WebSocket(url);
+        client.onopen = (msg) => { console.log('msg', msg)};
         client.onmessage = (message) => {
+            console.log(message);
             message && message.data && addNewStockValue(JSON.parse(message.data))
         };    
         client.onclose = () => {
@@ -76,10 +78,11 @@ const Dashboard = () => {
         });
     }
 
+    console.log(data);
     return (
         <div className="dashboard">
             {
-                Object.keys(data.stocks). length > 0 ? 
+                Object.keys(data.stocks).length > 0 ? 
                 <>
                     <main className="data-list">
                     {data && data.stocks && 
