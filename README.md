@@ -1,6 +1,6 @@
 # Trade Stock Live Frontend App
 
-React Application with Web-Socket. [Link](https://trade-stock-app.herokuapp.com/) of application (Heroku Server).
+React Application with Web-Socket. [Link](http://trade-stock-app.herokuapp.com/) of application (Heroku Server).
 
 ## Available Scripts
 
