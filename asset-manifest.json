@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/trade-stock-app/static/css/main.0f1c3135.chunk.css",
+    "main.js": "/trade-stock-app/static/js/main.b6502316.chunk.js",
+    "main.js.map": "/trade-stock-app/static/js/main.b6502316.chunk.js.map",
+    "runtime-main.js": "/trade-stock-app/static/js/runtime-main.489bfc71.js",
+    "runtime-main.js.map": "/trade-stock-app/static/js/runtime-main.489bfc71.js.map",
+    "static/js/2.0a97a9c8.chunk.js": "/trade-stock-app/static/js/2.0a97a9c8.chunk.js",
+    "static/js/2.0a97a9c8.chunk.js.map": "/trade-stock-app/static/js/2.0a97a9c8.chunk.js.map",
+    "static/js/3.fbebca61.chunk.js": "/trade-stock-app/static/js/3.fbebca61.chunk.js",
+    "static/js/3.fbebca61.chunk.js.map": "/trade-stock-app/static/js/3.fbebca61.chunk.js.map",
+    "index.html": "/trade-stock-app/index.html",
+    "static/css/main.0f1c3135.chunk.css.map": "/trade-stock-app/static/css/main.0f1c3135.chunk.css.map",
+    "static/js/2.0a97a9c8.chunk.js.LICENSE.txt": "/trade-stock-app/static/js/2.0a97a9c8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.489bfc71.js",
+    "static/js/2.0a97a9c8.chunk.js",
+    "static/css/main.0f1c3135.chunk.css",
+    "static/js/main.b6502316.chunk.js"
+  ]
+}
