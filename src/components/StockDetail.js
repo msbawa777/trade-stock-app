@@ -17,10 +17,6 @@ const StockDetail = (props) => {
                 data[stockName] = props.data[stockName].history;
             }
         });
-        // if(!Object.keys(data).length && Object.keys(props.data).length){
-        //     const stockName = Object.keys(props.data)[0];
-        //     data[stockName] = props.data[stockName].history
-        // }
         setData(data);
     },[props]);
 

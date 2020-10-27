@@ -19,6 +19,7 @@ tbody > tr{
 
 .dashboard {
   display: flex;
+  flex-direction: row;
 }
 
 .data-list{
@@ -54,4 +55,23 @@ span {
 
 .active {
   background-color: #cfcfcf;
+}
+
+@media screen and (max-width: 767px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+
+  .data-detail{
+    margin-top: 20px;
+  }
+
+  aside {
+    margin-left : 0px
+  }
+
+  table {
+    width: 100%;
+  }
 }
