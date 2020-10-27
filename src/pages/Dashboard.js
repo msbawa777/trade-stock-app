@@ -16,9 +16,7 @@ const Dashboard = () => {
 
     const connect = () => {
         client = new WebSocket(url);
-        client.onopen = (msg) => { console.log('msg', msg)};
         client.onmessage = (message) => {
-            console.log(message);
             message && message.data && addNewStockValue(JSON.parse(message.data))
         };    
         client.onclose = () => {
@@ -78,7 +76,6 @@ const Dashboard = () => {
         });
     }
 
-    console.log(data);
     return (
         <div className="dashboard">
             {
