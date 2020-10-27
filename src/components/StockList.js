@@ -18,7 +18,8 @@ const StockList = (props) => {
         return {
             color, 
             price : lastAddedItem.price,
-            createdAt : lastAddedItem.createdAt
+            createdAt : lastAddedItem.createdAt,
+            isSelected : stockItem.isSelected
         }
     }
 
@@ -35,9 +36,10 @@ const StockList = (props) => {
 
                     {
                         props.data && Object.keys(props.data).map(( stockName, index) => {
-                            const {color, price, createdAt} = getListItemInfo(props.data[stockName])
+                            const {color, price, createdAt, isSelected} = getListItemInfo(props.data[stockName])
                             return (
                                 <StockRow  
+                                    isSelected = {isSelected}
                                     onItemSelection = {props.onItemSelection}
                                     key = {index}
                                     stockName = {stockName} 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const StockRow = ({stockName , price, color, createdAt, onItemSelection}) => {
+const StockRow = ({stockName , price, color, createdAt, onItemSelection, isSelected}) => {
 
     const getTwoDigitFixedValue = (price) => {
         return price.toFixed(2);
@@ -11,7 +11,7 @@ const StockRow = ({stockName , price, color, createdAt, onItemSelection}) => {
     }
 
     return (
-        <tr onClick = {() => onItemSelection(stockName)}>
+        <tr className={`${isSelected ? "active" : ''}`} onClick={() => onItemSelection(stockName)}>
             <td>{capitalizeWords(stockName)}</td>
             <td style={{color : `${color}`}}>{getTwoDigitFixedValue(price)}</td>
             <td >{timeSince(createdAt)}</td>

@@ -68,7 +68,12 @@ const Dashboard = () => {
                 }
                 existingStockItem.history.push({ createdAt : timestamp, price : _price});
             }else{
-                existingStocks[name] = { price : _price, history : [{ createdAt : timestamp, price : _price}], isSelected : false};
+                if(Object.keys(data.stocks).length === 0){
+                    existingStocks[name] = { price : _price, history : [{ createdAt : timestamp, price : _price}], isSelected : true};
+                }else{
+                    existingStocks[name] = { price : _price, history : [{ createdAt : timestamp, price : _price}], isSelected : false};
+                }
+                
             }
         });
         setData({
