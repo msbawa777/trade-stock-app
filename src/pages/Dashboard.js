@@ -36,7 +36,7 @@ const Dashboard = () => {
             reconnect = false;
             client && client.close();
         }
-    });
+    }, []);
 
     const onItemSelection = (stockName) => {
         Object.keys(data.stocks).forEach(stockName => {
